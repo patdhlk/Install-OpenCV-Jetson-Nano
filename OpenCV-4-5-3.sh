@@ -9,12 +9,17 @@ cd ~
 sudo sh -c "echo '/usr/local/cuda/lib64' >> /etc/ld.so.conf.d/nvidia-tegra.conf"
 sudo ldconfig
 
+# python special handling
+sudo apt-get install -y python-dev python-numpy
+sudo curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+sudo python get-pip.py
+
 # install the dependencies
 sudo apt-get install -y build-essential cmake git unzip pkg-config zlib1g-dev
 sudo apt-get install -y libjpeg-dev libjpeg8-dev libjpeg-turbo8-dev libpng-dev libtiff-dev
 sudo apt-get install -y libavcodec-dev libavformat-dev libswscale-dev libglew-dev
 sudo apt-get install -y libgtk2.0-dev libgtk-3-dev libcanberra-gtk*
-sudo apt-get install -y python-dev python-numpy python-pip
+
 sudo apt-get install -y python3-dev python3-numpy python3-pip
 sudo apt-get install -y libxvidcore-dev libx264-dev libgtk-3-dev
 sudo apt-get install -y libtbb2 libtbb-dev libdc1394-22-dev libxine2-dev
