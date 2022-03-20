@@ -23,7 +23,7 @@ sudo apt-get install -y libgtk2.0-dev libgtk-3-dev libcanberra-gtk*
 sudo apt-get install -y python3-dev python3-numpy python3-pip
 sudo apt-get install -y libxvidcore-dev libx264-dev libgtk-3-dev
 sudo apt-get install -y libtbb2 libtbb-dev libdc1394-22-dev libxine2-dev
-sudo apt-get install -y gstreamer1.0-tools libv4l-dev v4l-utils v4l2ucp  qv4l2 
+sudo apt-get install -y gstreamer1.0-tools libv4l-dev v4l-utils 
 sudo apt-get install -y libgstreamer-plugins-base1.0-dev libgstreamer-plugins-good1.0-dev
 sudo apt-get install -y libavresample-dev libvorbis-dev libxine2-dev libtesseract-dev
 sudo apt-get install -y libfaac-dev libmp3lame-dev libtheora-dev libpostproc-dev
@@ -73,7 +73,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D WITH_OPENMP=ON \
 -D BUILD_TIFF=ON \
 -D WITH_FFMPEG=ON \
--D WITH_GSTREAMER=ON \
+-D WITH_GSTREAMER=OFF \
 -D WITH_TBB=ON \
 -D BUILD_TBB=ON \
 -D BUILD_TESTS=OFF \
